@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #a3d6c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: #2b9c80;
+  text-decoration: none;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 40px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.icon-user {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #2b9c80;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%232b9c80" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5zM12 14c-4.418 0-8 2.239-8 5v3h16v-3c0-2.761-3.582-5-8-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+}
+
+h1 {
+  margin: 10px 0 20px;
+  color: #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+label {
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #6dc3a1;
+  border-radius: 4px;
+  background-color: #d6fff2;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #2b9c80;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #248b70;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #248b70;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.recuperar {
+  font-size: 12px;
+  margin-top: 10px;
+}
