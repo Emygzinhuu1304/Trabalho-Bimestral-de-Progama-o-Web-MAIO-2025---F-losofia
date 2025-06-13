@@ -29,5 +29,13 @@
       <p>Já possui conta? <a href="/User/Login.html">Login.</a></p>
     </form>
   </div>
+
+  <script>
+  document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Impede o recarregamento da página
+    window.location.href = '/Filosofia - HOME.html'; // Redireciona para a HOME
+  });
+</script>
+
 </body>
 </html>

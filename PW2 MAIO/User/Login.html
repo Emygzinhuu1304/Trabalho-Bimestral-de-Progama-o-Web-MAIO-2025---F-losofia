@@ -23,8 +23,15 @@
 
       <button type="submit">Login</button>
     </form>
-    <p class="recuperar">Esqueceu a senha? <a href="#">Recuperar senha.</a></p>
+    <p class="recuperar">Esqueceu a senha? <a href="/User/Recuperar Senha.html">Recuperar senha.</a></p>
   </div>
   
+  <script>
+  document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Impede o recarregamento da página
+    window.location.href = '/Filosofia - HOME.html'; // Redireciona para a HOME
+  });
+</script>
+
 </body>
 </html>
