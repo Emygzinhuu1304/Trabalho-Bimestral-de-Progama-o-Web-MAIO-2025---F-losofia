@@ -1,0 +1,60 @@
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #6dc3a1;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 40px 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu.open {
+  right: 0;
+}
+
+.side-menu h2 {
+  color: #1e4b3c;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  margin-bottom: 20px;
+}
+
+/* Estilo dos botões existentes */
+.side-menu button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
+
+.side-menu button:hover {
+  text-decoration: underline;
+}
+
+/* Estilo novo para links <a> */
+.side-menu a {
+  background: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+
+.side-menu a:hover {
+  text-decoration: underline;
+}
