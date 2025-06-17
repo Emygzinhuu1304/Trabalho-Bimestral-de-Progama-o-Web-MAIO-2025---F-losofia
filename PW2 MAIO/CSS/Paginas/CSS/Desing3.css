@@ -48,3 +48,12 @@
    margin-bottom: 10px;
  }
  
+.voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: #2b9c80;
+  text-decoration: none;
+}
+
