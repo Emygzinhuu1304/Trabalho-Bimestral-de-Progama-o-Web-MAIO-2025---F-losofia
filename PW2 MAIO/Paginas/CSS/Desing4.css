@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3d6c4;
+    padding: 15px;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #b2e3cf;
+    padding: 20px;
+    margin-top: 0;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.header-title {
+    background-color: #b6e2cd;
+    color: #000;
+    font-size: 24px;
+    padding: 20px 0;
+    border-radius: 40px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-align: center;
+}
+
+.voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #2b9c80;
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    background-color: #71c4a2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.text-block p {
+    margin-bottom: 10px;
+}
+
+/* ----------- FILOSOFOS / PROFESSOR ----------- */
+
+.filosofo {
+    background-color: #6dc3a1;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza o conteúdo (imagem + texto) no mobile */
+    align-items: center;
+    gap: 20px; /* Espaçamento entre imagem e texto */
+}
+
+.filosofo .imagem {
+    width: 100%;
+    text-align: center; /* Centraliza a imagem em telas pequenas */
+}
+
+.filosofo .imagem img {
+    max-width: 50%; /* Ajusta o tamanho das imagens, pode alterar se quiser maior/menor */
+    border-radius: 10px;
+    display: inline-block; /* Necessário para o text-align funcionar */
+}
+
+.filosofo .texto {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Responsividade para telas grandes (desktop) */
+@media (min-width: 768px) {
+    .filosofo {
+        flex-wrap: nowrap;
+        justify-content: space-between; /* Alinha imagem de um lado e texto do outro */
+    }
+
+    .filosofo .imagem {
+        width: 30%;
+        text-align: left; /* Volta o alinhamento lateral nas telas grandes */
+    }
+
+    .filosofo .imagem img {
+        max-width: 100%;
+    }
+
+    .filosofo .texto {
+        width: 65%;
+        margin-top: 0;
+    }
+}
