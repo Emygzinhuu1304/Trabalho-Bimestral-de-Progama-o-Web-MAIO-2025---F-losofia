@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3d6c4;
+    padding: 15px;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #b2e3cf;
+    padding: 20px;
+    margin-top: 0;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.header-title {
+    background-color: #b6e2cd;
+    color: #000;
+    font-size: 24px;
+    padding: 20px 0;
+    border-radius: 40px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-align: center;
+}
+
+.voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #2b9c80;
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    background-color: #71c4a2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.text-block p {
+    margin-bottom: 10px;
+}
+
+/* ----------- FILOSOFOS / PROFESSOR ----------- */
+
+.filosofo {
+    background-color: #6dc3a1;
+    margin: 40px auto; /* Aumentei o espaçamento entre os cards */
+    width: 85%;
+    padding: 20px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease; /* Para hover futuramente */
+}
+
+.filosofo:hover {
+    transform: scale(1.02); /* Efeito de zoom leve ao passar o mouse */
+}
+
+.filosofo .imagem {
+    width: 100%;
+    text-align: center;
+}
+
+.filosofo .imagem img {
+    max-width: 50%;
+    border-radius: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Para o zoom da imagem */
+}
+
+.filosofo .imagem img:hover {
+    transform: scale(1.05); /* Zoom na imagem ao passar o mouse */
+}
+
+.filosofo .texto {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.85); /* Mais opaco pra melhorar a leitura */
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    color: #333;
+    font-size: 19px; /* Levemente maior para mobile */
+    line-height: 1.6; /* Mais espaço entre linhas */
+}
+
+/* Responsividade para telas grandes (desktop) */
+@media (min-width: 768px) {
+    .filosofo {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .filosofo .imagem {
+        width: 30%;
+        text-align: left;
+    }
+
+    .filosofo .imagem img {
+        max-width: 100%;
+    }
+
+    .filosofo .texto {
+        width: 65%;
+        margin-top: 0;
+        font-size: 20px;
+    }
+}
+
+.links-backgrounds {
+  width: 85%;
+  margin: 40px auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.links-backgrounds a.filosofo {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit; /* Para herdar a cor do texto */
+}
