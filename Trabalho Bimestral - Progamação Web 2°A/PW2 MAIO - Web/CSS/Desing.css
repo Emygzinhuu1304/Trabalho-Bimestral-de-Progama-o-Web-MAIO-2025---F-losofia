@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a3d6c4;
+    padding: 15px;
+    font-size: 20px; /* Aumentei o tamanho base da fonte */
+    line-height: 1.6; /* Mais espaço entre linhas */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.header-title {
+    background-color: #b6e2cd;
+    color: #000;
+    font-size: 26px;
+    padding: 20px 0;
+    border-radius: 40px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-align: center;
+}
+
+/* USER ICON */
+
+.user-icon {
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-icon::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+.user-icon::after {
+    content: "";
+    width: 20px;
+    height: 10px;
+    border-bottom: 2px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* CARD (BLOCOS DE HOME) */
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #71c4a2;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px; /* Mais espaço entre os cards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Efeito de leve zoom no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    width: 140px; /* Levemente maior para destaque */
+    height: 140px;
+    object-fit: cover;
+    margin-right: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05); /* Zoom só na imagem ao passar o mouse */
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.text-block p {
+    margin-bottom: 12px;
+}
